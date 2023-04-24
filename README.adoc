@@ -8,3 +8,38 @@ image::./images/misc/AMERPartnerWSBanner.png[]
 Version : 1.0.0 `24th April 2023` +
 
 ''' 
+
+== Preface
+
+=== Customer Churn Hands On Lab
+
+==== Objective
+
+In this exercise we will implement an end-to-end machine learning workflow using Cloudera Machine Learning, including: 
+
+. Data ingest 
+. Data exploration 
+. Model training and experimentation
+. Model serving 
+. Business applications and 
+. MLOps - model operations 
+
+=== Business Use Case
+
+In this Hands On Lab you will create a model to predict customer churn and present model-driven insights to your stakeholders. You will use an interpretability technique to make your otherwise “black box model” explainable in an interactive dashboard. A mathematical explanation is beyond the scope of this lab but if you are interested in learning more we recommend the https://ff06-2020.fastforwardlabs.com/[Fast Forward Labs Report on Model Interpretability]. Finally, you will use basic ML Ops techniques to productionize and monitor your model. 
+
+=== Prerequisites for workshop participants:
+- Need to have Workload password set (this will be needed for CDV part where CDW is queried)
+
+=== Environment Setup for workshop:
+- Need Impala CDW large enough to support 50 - 100 users hitting it during workshop
+- Need table in the DL that contains churn dataset, available to query through CDW above (this is for DataViz)
+- Single ML Workspace as the primary working environment 
+- *Important!* Ensure that at ML Workspace creation both Model Metrics and Governance features are turned on (they are off by default). 
+- Use this document for all preparation
+// For 2nd day of workshops, need to recreate the ML Workspace
+
+
+
+
+
