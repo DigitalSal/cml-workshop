@@ -39,7 +39,7 @@ In this Hands On Lab you will create a model to predict customer churn and prese
 - Use this document for all preparation
 // For 2nd day of workshops, need to recreate the ML Workspace
 
-
-
+=== Visual Guide to CML Workshop
+image::./images/misc/MLlifeCycleinCML.png[]
 
 
