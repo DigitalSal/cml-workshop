@@ -1,6 +1,6 @@
 = Cloudera DataFlow - Workshop Student Guide
 
-image::./images/misc/banner-impact24.png[]
+image::./images/misc/AMERPartnerWSBanner.png[]
 
 // :toc: left 
 '''
