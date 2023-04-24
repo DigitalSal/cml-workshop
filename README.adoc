@@ -48,8 +48,18 @@ image::./images/misc/pref/MLlifeCycleinCML.png[]
 
 AMPs (Applied Machine Learning Prototypes) are reference Machine Learning projects that have been built by Cloudera Fast Forward Labs to provide quickstart examples and tutorials. AMPs are deployed into the Cloudera Machine Learning (CML) experience, which is a platform you can also build your own Machine Learning use cases on.
 
-- Go to Workshop CDP Tenant
-- Navigate to the Machine Learning tile from the CDP Menu. 
-- Click into the Workspace by clicking the Workspace name.
-image::./images/misc/lab1/lab1-1.png[]
+- Go to the Workshop Environment (provided by instructor)
+- Navigate to the Machine Learning tile from the CDP Menu 
+- Click into the Workspace by clicking the Workspace name (provided by instructor)
 
+image::./images/lab1/lab1-1.png[]
+
+A Workspace is a cluster that runs on a kubernetes service to provide teams of data scientists a platform to develop, test, train, and ultimately deploy machine learning models. It is designed to deploy a small number of infra resources and then autoscale compute resources as needed when end users implement more workloads and use cases.
+
+- Click on *User Settings*
+- Go to Environment Variables tab and set your *WORKLOAD_PASSWORD* (provided by instructor).
+
+image::./images/lab1/lab1-2.png[]
+
+In a workspace, Projects view is the default and you’ll be presented with all public (within your organization) and your own projects, if any. In this lab we will be creating a project based on Applied ML Prototype. 
+Click on *AMPs* in the side panel and search for “workshop”
