@@ -40,7 +40,16 @@ In this Hands On Lab you will create a model to predict customer churn and prese
 // For 2nd day of workshops, need to recreate the ML Workspace
 
 === Visual Guide to CML Workshop
-image::./images/misc/MLlifeCycleinCML.png[]
+
+image::./images/misc/pref/MLlifeCycleinCML.png[]
 
 
+== Lab 1: Configure and deploy the Workshop Content as an https://docs.cloudera.com/machine-learning/cloud/applied-ml-prototypes/topics/ml-amps-overview.html[AMP] (15 min)
+
+AMPs (Applied Machine Learning Prototypes) are reference Machine Learning projects that have been built by Cloudera Fast Forward Labs to provide quickstart examples and tutorials. AMPs are deployed into the Cloudera Machine Learning (CML) experience, which is a platform you can also build your own Machine Learning use cases on.
+
+- Go to Workshop CDP Tenant
+- Navigate to the Machine Learning tile from the CDP Menu. 
+- Click into the Workspace by clicking the Workspace name.
+image::./images/misc/lab1/lab1-1.png[]
 
