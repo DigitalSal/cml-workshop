@@ -127,7 +127,13 @@ This view is also where the project can be deleted, if needed.
 * Click on *Data* in the side panel
 * Click on *Launch Data Application*
 +
-image::./images/lab2/lab3-1.png[]
+image::./images/lab3/lab3-1.png[]
 
++
+https://docs.cloudera.com/data-visualization/7/index.html[Cloudera Data Visualization] (CDV) deployed in CML will take approximately 2 minutes to spin up. It’s a powerful addition to the workflow, as it allows quick access to a SQL interface and visual data exploration without writing any Python code. The data connection points to the central Data Lake which stores all of the enterprise data, giving CML user ability to discover datasets, combine and filter them to uncover new insight. 
++
+CDV is deployed as an Application inside of CML. While this application is starting, you can check on its status by clicking on Applications in the side panel. When you see status *Running* you can return to the Data page in the side panel. This is what you should see now:
++
+image::./images/lab3/lab3-2.png[]
 
 
