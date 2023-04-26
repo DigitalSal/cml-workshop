@@ -170,4 +170,4 @@ FROM default.churn_prototype
 WHERE seniorcitizen = "1";
 ----
 
-* Click * SAVE AS DATASET*. This will take you to the *DATASETS* tab in the top menu.
+* Click *SAVE AS DATASET* button. This will take you to the *DATASETS* tab in the top menu.
