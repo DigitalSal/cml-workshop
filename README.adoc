@@ -66,3 +66,16 @@ In a workspace, Projects view is the default and you’ll be presented with all 
 - Click on *AMPs* in the side panel and search for “workshop”
 
 image::./images/lab1/lab1-3.png[]
+
+- Click on the AMP card and then on *Configure Project*
+
+image::./images/lab1/lab1-4.png[]
+
+*IMPORTANT* +
+
+* In the Configure Project screen, change the HIVE_TABLE to have a unique suffix. Leave the other environment variables as is. +
++
+-- 
+** DATA_LOCATION: `data/churn_prototype`
+--
++
