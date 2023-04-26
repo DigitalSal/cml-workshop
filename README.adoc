@@ -180,6 +180,18 @@ image::./images/lab3/lab3-6.png[]
 +
 In the context of Cloudera Data Visualization, creating a Dataset is defining metadata on top of existing Hive or Iceberg table. The logical Dataset object can then be easily used to build visuals and dashboards fit for decision making or data exploration.
 
-* Click on your Dataset to view what metadata can be applied to it.
+* Click on your Dataset to view the metadata information.
 +
 image::./images/lab3/lab3-7.png[]
+
+* Click on *Fields* menu item in the left-hand panel
+* Click on the *EDIT FIELDS* button
++
+image::./images/lab3/lab3-8.png[]
+* Click the down arrow at the end of the _churn_ Field, and select _Clone_
++
+image::./images/lab3/lab3-9.png[]
+
+* Find the Copy of churn Field at the bottom of the Dimensions list and change its type to Mes(ure) and its type from  (string) to (integer).
+
+
