@@ -135,5 +135,10 @@ https://docs.cloudera.com/data-visualization/7/index.html[Cloudera Data Visualiz
 CDV is deployed as an Application inside of CML. While this application is starting, you can check on its status by clicking on Applications in the side panel. When you see status *Running* you can return to the Data page in the side panel. This is what you should see now:
 +
 image::./images/lab3/lab3-2.png[]
++
+From here you can navigate to SQL editor, start building visualizations, or create new datasets.
 
+* Click on *SQL* tab in the top menu
++
+image::./images/lab3/lab3-3.png[]
 
