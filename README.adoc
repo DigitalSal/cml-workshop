@@ -171,3 +171,13 @@ WHERE seniorcitizen = "1";
 ----
 
 * Click *SAVE AS DATASET* button. This will take you to the *DATASETS* tab in the top menu.
++
+image::./images/lab3/lab3-5.png[]
+
+* Give the Dataset a name and click *CREATE*
++
+image::./images/lab3/lab3-6.png[]
++
+In the context of Cloudera Data Visualization, creating a Dataset is defining metadata on top of existing Hive or Iceberg table. The logical Dataset object can then be easily used to build visuals and dashboards fit for decision making or data exploration.
+
+* Click on your Dataset to view what metadata can be applied to it.
