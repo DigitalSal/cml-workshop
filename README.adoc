@@ -102,4 +102,8 @@ image::./images/lab2/lab2-1.png[]
 This feature allows teams of Data Scientists, Analysts, and Data Engineers to work together on a given project. 
 +
 * Ask a colleague for their user ID and add them as a collaborator with a Viewer role on your project by clicking *Add*
++
+image::./images/lab2/lab2-2.png[]
++
+You can give access to other users with certain permissions for the encompassing project so teams of users can collaborate together. CML users can also be organized into Teams for ease of management. Consult https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-adding-collaborators.html[CML documentation] to learn about available roles and their permissions.
 
