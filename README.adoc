@@ -89,7 +89,7 @@ image::./images/lab1/lab1-5.png[]
 
 The latest version of the AMP has been tested for CML Runtimes with Python 3.7 and Spark 2.4.7. If the workspace does not have the exact runtime that was tested you may get a warning. However, you can still deploy the project with other runtimes. For example, you can deploy the project with Spark 2.4.7, CDP 7.2.11, CDE 1.13 HotFix 2.
 
-== Lab2: Churn Model Project Overview (10 min)
+== Lab 2: Churn Model Project Overview (10 min)
 
 * Click on *Overview* on the side panel. On the Project Overview page you will find a listing of Files, as well as a rendering of the README.md 
 
@@ -122,7 +122,7 @@ image::./images/lab2/lab2-3.png[]
 +
 This view is also where the project can be deleted, if needed. 
 
-== Lab3: Data Visualization (30 min)
+== Lab 3: Data Visualization (30 min)
 
 * Click on *Data* in the side panel
 * Click on *Launch Data Application*
@@ -228,7 +228,9 @@ Congratulations you just built your first visual in CDV! Now add a couple of mor
 
 Performant SQL interface and visual data exploration are two powerful tools in the arsenal of a Data Professional. One helps to wrangle the data available in the enterprise Data Lakehouse, the other makes it easier to identify patterns and to communicate information to a wider audience.
 
-== LAB4: CML Sessions and Workbench
+== Lab 4: CML Sessions and Workbench
+
+=== Start a new CML Session
 
 Sessions allow you to perform actions such as run R, Scala or Python code. They also provide access to an interactive command prompt and terminal. Sessions will be built on a specified Runtime Image, which is a docker container that is deployed onto the ML Workspace. In addition you can specify how much compute you want the session to use.
 
@@ -252,7 +254,7 @@ You will be greeted with a pop-up window to get you started connecting to pre-po
 +
 image::./images/lab4/lab4-2.png[]
 
-*Script 1: Bootstrap File*
+=== Script 0: Bootstrap File
 
 * Navigate to _code/0_bootstrap.py_
 +
@@ -262,7 +264,7 @@ You need to run this at the start of the project. It will install the requiremen
 +
 image::./images/lab4/lab4-3.png[]
 
-*Script 1: Ingest Data*
+=== Script 1: Ingest Data
 
 * Navigate to _code/1_data_ingest.py_
 +
@@ -309,7 +311,7 @@ With Jobs you can schedule and orchestrate your batch scripts. Jobs allow you to
 +
 image::./images/lab4/lab4-7.png[]
 
-*Notebooks 2: Interactive Analysis with JupyterLab*
+=== Notebooks 2: Interactive Analysis with JupyterLab
 
 In the previous section you loaded a csv file with a python script. In this section you will perform more Python commands with Jupyter Notebooks. Notebooks have a “.ipynb” extension and need to be executed with a Session using the JupyterLabs editor. 
 
