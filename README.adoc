@@ -288,7 +288,7 @@ The code is explained in the script comments. However, here are a key few highli
 
 In a real-life scenario, the underlying data may be shifting from week to week or even hour to hour. It may be necessary to run the ingestion process in CML on a recurring basis. Jobs allow any project script to be scheduled to run inside of an ML Workspace compute cluster.
 
-* Click on the *<-Project* in the top panel on the right 
+* Click on the *<-Project* menu item in the top panel on the right 
 * Click on the *Jobs* in the side panel
 * Click *New Job* 
 * Give your job a name (e.g. _Ingestion Job_) and select _code/1_data_ingest.py_ as the Script to run
