@@ -141,4 +141,8 @@ From here you can navigate to SQL editor, start building visualizations, or crea
 * Click on *SQL* tab in the top menu
 +
 image::./images/lab3/lab3-3.png[]
++
+NOTE: If you see below error check to make sure your Workload Password is set in CML (see Part 1, p.5). You may need to restart your app to fix this.
++
+image::./images/lab3/lab3-4.png[]
 
