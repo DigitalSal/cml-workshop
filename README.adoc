@@ -93,4 +93,13 @@ The latest version of the AMP has been tested for CML Runtimes with Python 3.7 a
 
 * Click on *Overview* on the left Menu. On the Project Overview page you will find a listing of Files, as well as a rendering of the README.md 
 
-image::./images/lab1/lab2-1.png[]
+image::./images/lab2/lab2-1.png[]
+
+*Collaborators:* +
+
+* Click on *Collaboratos* in the side panel
++
+This feature allows teams of Data Scientists, Analysts, and Data Engineers to work together on a given project. 
++
+* Ask a colleague for their user ID and add them as a collaborator with a Viewer role on your project by clicking *Add*
+
