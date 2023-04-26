@@ -355,22 +355,33 @@ When you are finished with notebook “2_data_exploration.ipynb” go ahead and 
 In this notebook “3_model_building.ipynb” you creat a model with SciKit Learn and Lime, and then store it in your project. Optionally, you could have saved it to Cloud Storage. CML allows you to work with any other libraries of your choice. This is the power of CML… any open source library and framework is one pip install away.
 
 * Click *Stop* to terminate your JupyterLab session
-* Return to *<- Project* and *>_ Sessions* and to your single running session
+* Return to *<- Project* and click on *>_ Sessions* and retun to your single running session
 
 === Model training and mlflow Experiments
 
-After exploring the data and building an initial, baseline model the work of optimization (a.k.a. hyperparameter tuning) can start to take place. In this phase of an ML project, model training script is made to be more robust. Further, it is now time to find model parameters that provide the “best” outcome. Depending on the model type and business use case “best” may mean use of different metrics. For instance, in a model that is built to diagnose ailments, the rate of false negatives may be especially important to determine “best” model. In cybersecurity use cae, it may be the rate of false positives that’s of most interest. 
+After exploring the data and building an initial, baseline model the work of optimization (a.k.a. hyperparameter tuning) can start to take place. In this phase of an ML project, model training script is made to be more robust. Further, it is now time to find model parameters that provide the “best” outcome. Depending on the model type and business use case “best” may mean use of different metrics. For instance, in a model that is built to diagnose ailments, the rate of false negatives may be especially important to determine “best” model. In cybersecurity use case, it may be the rate of false positives that’s of most interest. 
 
 To give Data Scientists flexibility to collect, record, and compare experiment runs, CML provides out-of-the-box mlflow Experiments as a framework to achieve this.
 
 * Inside a running Workbench session, navigate to _code/4_train_model.py_
-* Click the *Play* button in the top menu
+* Click the *Play* button in the top menu to run all lines
 
 This script uses “kernel” and “max_iter” as the two parameters to manipulate during model training in order to achieve the best result. In our case, we’ll define “best” as the highest “test_score”.
 
 * While your script is running, click on *<- Project* in the top panel of the REPL
 * Click on *Experiments* in the side bar
 * Click on *Churn Model Tuning*
++
+image::./images/lab5/lab5-1.png[]
++
+As expected, higher number of max_iterations produces better result (higher test_score). Interestingly, the choice of kernel does not make a difference at higher max_iter values. We can choose linear as it allows for faster model training.
+
+* Select all runs with “linear” Kernel 
+* Click *Compare*
+* Click *test_score*
+
+
+
 
 
 
