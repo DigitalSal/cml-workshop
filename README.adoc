@@ -297,8 +297,23 @@ In a real-life scenario, the underlying data may be shifting from week to week o
 +
 image::./images/lab4/lab4-5.png[]
 
+* Scroll to the bottom of the page and click the *Create Job* button
++
+image::./images/lab4/lab4-6.png[]
++
+Optionally, you can also manually trigger your job by clicking the *Run* action button on the right.
++
+With Jobs you can schedule and orchestrate your batch scripts. Jobs allow you to build complex pipelines and are an essential part of any CI/CD or ML Ops pipeline. Typical use cases span from Spark ETL, Model Batch Scoring, A/B Testing and other model management related automations.
 
+* Click on *>_ Sessions* in the side panel to return to your running session
++
+image::./images/lab4/lab4-7.png[]
 
+*Notebooks 2: Interactive Analysis with JupyterLab*
+
+In the previous section you loaded a csv file with a python script. In this section you will perform more Python commands with Jupyter Notebooks. Notebooks have a “.ipynb” extension and need to be executed with a Session using the JupyterLabs editor. 
+
+Launch a new session by selecting the three “vertical dots” on the right side of the top menu bar. If you are in full-screen mode, the *Sessions* dropdown will appear without having to click into the menu.
 
 
 
