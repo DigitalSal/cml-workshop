@@ -91,7 +91,7 @@ The latest version of the AMP has been tested for CML Runtimes with Python 3.7 a
 
 == Lab2: Churn Model Project Overview (10 min)
 
-* Click on *Overview* on the left Menu. On the Project Overview page you will find a listing of Files, as well as a rendering of the README.md 
+* Click on *Overview* on the side panel. On the Project Overview page you will find a listing of Files, as well as a rendering of the README.md 
 
 image::./images/lab2/lab2-1.png[]
 
@@ -101,9 +101,33 @@ image::./images/lab2/lab2-1.png[]
 +
 This feature allows teams of Data Scientists, Analysts, and Data Engineers to work together on a given project. 
 +
-* Ask a colleague for their user ID and add them as a collaborator with a Viewer role on your project by clicking *Add*
+* Ask a colleague for their user ID or use wuser00 and add them as a collaborator with a Viewer role on your project by clicking *Add*
 +
 image::./images/lab2/lab2-2.png[]
 +
 You can give access to other users with certain permissions for the encompassing project so teams of users can collaborate together. CML users can also be organized into Teams for ease of management. Consult https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-adding-collaborators.html[CML documentation] to learn about available roles and their permissions.
+
+*Project Settings:* +
+
+* Click on *Project Settings* in the side panel
++
+Taking a look at Project Settings, this is where you can define several options for the current project. You have the ability to define different engines where your code in CML will run. There are project variables that can be defined and used throughout your code. SSH tunnels can also be configured to connect to other services as needed. More details can be found in https://docs.cloudera.com/machine-learning/cloud/projects/topics/ml-projects.html[our docs].
+
+* Change the name of your project to something creative
++
+*Please do not change the other Project Settings*
++
+image::./images/lab2/lab2-3.png[]
+
++
+This view is also where the project can be deleted, if needed. 
+
+== Lab3: Data Visualization (30 min)
+
+* Click on *Data* in the side panel
+* Click on *Launch Data Application*
++
+image::./images/lab2/lab3-1.png[]
+
+
 
