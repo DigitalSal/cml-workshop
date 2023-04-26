@@ -315,7 +315,63 @@ image::./images/lab4/lab4-7.png[]
 
 In the previous section you loaded a csv file with a python script. In this section you will perform more Python commands with Jupyter Notebooks. Notebooks have a “.ipynb” extension and need to be executed with a Session using the JupyterLabs editor. 
 
-Launch a new session by selecting the three “vertical dots” on the right side of the top menu bar. If you are in full-screen mode, the *Sessions* dropdown will appear without having to click into the menu.
+* Launch a new session by selecting the three “vertical dots” on the right side of the top menu bar. If you are in full-screen mode, the *Sessions* dropdown will appear without having to click into the menu.
++
+image::./images/lab4/lab4-8.png[] +
+
+* Launch the new Session with the following settings:
++
+--
+** Session Name: `telco_churn_session_2`
+** Editor: `JuypterLab`
+** Kernel: `Python 3.7`
+** Resource Profile: `1vCPU/2 GiB Memory` | `2vCPU/4 GiB Memory`
+** Runtime Edition: `Standard`
+** Runtime Version: `Any available version`
+** Enable Spark Add On: `enable any Spark version`
+--
++
+After a few moments the JupyterLab editor should have taken over the screen.
+
+*Open Notebook _code/2_data_exploration.ipynb_ from the left side menu and investigate the code
++
+Notebook cells are meant to be executed individually and give a more interactive flavor for coding and experimentation. 
++
+As before, no code changes are required and more detailed instructions are included in the comments. There are two ways to run each cell. Click on the cell you want to run. Hit “Shift” + “Enter” on your keyboard. Use this approach if you want to execute each cell individually. If you use this approach, *make sure to run cells top to bottom*, as they depend on each other.
+
+* Alternatively, open the “Run” menu from the top bar and then select “Run All”. Use this approach if you want to execute the entire notebook in bulk.
++
+image::./images/lab4/lab4-9.png[]
++
+With CML Runtimes, you can easily switch between different editors and work with multiple editors or programming environments in parallel if needed.  First you stored a Spark Dataframe as a Spark table in the “1_ingest_data.py” python script using the Workbench editor. Then you retrieved the data in notebook “2_data_exploration.ipynb” using a JupyterLab session via Spark SQL. Spark SQL allows you to easily exchange files across sessions. Your Spark table was tracked as Hive External Tables and automatically made available in Atlas, the Data Catalog, and CDW. This is powered by SDX integration and requires no work on the CDP Admin or Users. We will see more on this in Lab 7.
+
+== Lab 5: Model Training with JupyterLab
+
+When you are finished with notebook “2_data_exploration.ipynb” go ahead and move on to notebook “3_model_building.ipynb”. As before, no code changes are required.
+
+* While still in JupyterLab session, navigate to _code/3_model_building.ipynb_
+* Execute all code in _3_model_building.ipynb_
+
+In this notebook “3_model_building.ipynb” you creat a model with SciKit Learn and Lime, and then store it in your project. Optionally, you could have saved it to Cloud Storage. CML allows you to work with any other libraries of your choice. This is the power of CML… any open source library and framework is one pip install away.
+
+* Click *Stop* to terminate your JupyterLab session
+* Return to *<- Project* and *>_ Sessions* and to your single running session
+
+=== Model training and mlflow Experiments
+
+After exploring the data and building an initial, baseline model the work of optimization (a.k.a. hyperparameter tuning) can start to take place. In this phase of an ML project, model training script is made to be more robust. Further, it is now time to find model parameters that provide the “best” outcome. Depending on the model type and business use case “best” may mean use of different metrics. For instance, in a model that is built to diagnose ailments, the rate of false negatives may be especially important to determine “best” model. In cybersecurity use cae, it may be the rate of false positives that’s of most interest. 
+
+To give Data Scientists flexibility to collect, record, and compare experiment runs, CML provides out-of-the-box mlflow Experiments as a framework to achieve this.
+
+* Inside a running Workbench session, navigate to _code/4_train_model.py_
+* Click the *Play* button in the top menu
+
+This script uses “kernel” and “max_iter” as the two parameters to manipulate during model training in order to achieve the best result. In our case, we’ll define “best” as the highest “test_score”.
+
+* While your script is running, click on *<- Project* in the top panel of the REPL
+* Click on *Experiments* in the side bar
+* Click on *Churn Model Tuning*
+
 
 
 
