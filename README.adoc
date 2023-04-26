@@ -218,9 +218,37 @@ By default, CDV will use a table as the starter format. Of course the idea is to
 +
 image::./images/lab3/lab3-12.png[]
 
-* Slect *Horizontal bars* by click on the that card
+* Slect *Horizontal bars* by clicking on the that card
 +
 Congratulations you just built your first visual in CDV! Now add a couple of more interesting visuals and save your dashboard to conclude this part of the workshop.
+
+* Click on the *Visual* menu item on the right-hand panel and the click on *NEW VISUAL* to add a new visual
+* Repeat steps above in this section to build a visual based on other variables and styles
+* Give your dashboard a title and a subtitle
+
+Performant SQL interface and visual data exploration are two powerful tools in the arsenal of a Data Professional. One helps to wrangle the data available in the enterprise Data Lakehouse, the other makes it easier to identify patterns and to communicate information to a wider audience.
+
+== LAB4: CML Sessions and Workbench
+
+Sessions allow you to perform actions such as run R, Scala or Python code. They also provide access to an interactive command prompt and terminal. Sessions will be built on a specified Runtime Image, which is a docker container that is deployed onto the ML Workspace. In addition you can specify how much compute you want the session to use.
+
+* Click on the *Overview* menu item in the side panel
+* Click on the *New Session* button in the top right corner
++
+image::./images/lab4/lab4-1.png[]
++
+Before you start a new session you can give it a name, choose an editor (e.g. JupyterLab), what kernel you’d like to use (e.g. latest Python or R), whether you want to make Spark (and hdfs) libraries be available in your session, and finally the resource profile (CPU, memory, and GPU). 
+
+* Ensure that *Enable Spark* add on is enabled
+* Leave all other default settings as is and click the *Start Session* button
++
+The Workbench is now starting up and deploying a container onto the workspace at this point. Going from left to right you will see the project files, editor pane, and session pane. 
++
+Once you see the flashing red line on the bottom of the session pane turn steady green the container has been successfully started.
++
+You will be greeted with a pop-up window to get you started connecting to pre-populated Data Lake sources (e.g. virtual Data Warehouses). You could simply copy the code snippet provided and easily connect to, say, a Hive vDW. However, in this lab we won’t be using this feature.
+
+* Check the box *Don't show me this again* and click the *Close* button
 
 
 
