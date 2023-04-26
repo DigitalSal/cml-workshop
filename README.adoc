@@ -147,7 +147,7 @@ NOTE: If you see below error check to make sure your Workload Password is set in
 image::./images/lab3/lab3-4.png[]
 
 * In *Data Connection* drop down select _pse-impala-vw_ (instructor may provide a different connection)
-* Inn the SQL Editor enter the query below, the click *RUN* or ⌘+Enter
+* Inn the SQL editor enter the query below, the click *RUN* or ⌘+Enter
 +
 [source, SQL]
 ----
@@ -158,3 +158,16 @@ SELECT
     COUNT(DISTINCT paymentmethod) as 'paymentmethod'
 FROM default.churn_prototype;
 ----
++
+The result produced tells us that each categorical variable in this dataset has just a handful of unique values. Any number of table stats analysis can be carried out, including table joins, filtering, etc. For example, below we will limit what data is pulled in to build a dashboard. 
+
+* In the SQL editor replace the previous query with the query below
++
+[source, SQL]
+----
+SELECT * 
+FROM default.churn_prototype
+WHERE seniorcitizen = "1";
+----
+
+* Click * SAVE AS DATASET*. This will take you to the *DATASETS* tab in the top menu.
