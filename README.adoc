@@ -77,5 +77,20 @@ image::./images/lab1/lab1-4.png[]
 +
 -- 
 ** DATA_LOCATION: `data/churn_prototype`
+** HIVE_DATABASE: `default`
+** HIVE_TABLE: `churn_prototype_<unique username/value>`
 --
 +
+image::./images/lab1/lab1-5.png[]
+
+* Click *Launch Project*
+
+*NOTE:* If you see a Warning about runtime mismatch, select the latest available runtime from the dropdown menu.
+
+The latest version of the AMP has been tested for CML Runtimes with Python 3.7 and Spark 2.4.7. If the workspace does not have the exact runtime that was tested you may get a warning. However, you can still deploy the project with other runtimes. For example, you can deploy the project with Spark 2.4.7, CDP 7.2.11, CDE 1.13 HotFix 2.
+
+== Lab2: Churn Model Project Overview (10 min)
+
+* Click on *Overview* on the left Menu. On the Project Overview page you will find a listing of Files, as well as a rendering of the README.md 
+
+image::./images/lab1/lab2-1.png[]
