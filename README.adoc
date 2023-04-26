@@ -193,5 +193,22 @@ image::./images/lab3/lab3-8.png[]
 image::./images/lab3/lab3-9.png[]
 
 * Find the Copy of churn Field at the bottom of the Dimensions list and change its type to Mes(ure) and its type from  (string) to (integer).
++
+image::./images/lab3/lab3-10.png[]
+
+* Click the *SAVE* button
++
+There is https://docs.cloudera.com/data-visualization/7/work-with-data/topics/viz-work-with-datasets.html[much more] that can be done with a Dataset, but we will leave it here. Now your Dataset is ready to be used in a Dashboard.
+
+* Click on the *Visual* tab in the top menu
+* Click on the *NEW DASHBOARD* button located on the top right
++
+You are now presented with a Dashboard building interface. 
+
+* Click on *Visuals* menu item in the right-hand panel, the connection is the same one you used to run your SQL against, and the Dataset the one you just created. 
++
+image::./images/lab3/lab3-11.png[]
+
+
 
 
