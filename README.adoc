@@ -378,8 +378,11 @@ As expected, higher number of max_iterations produces better result (higher test
 
 * Select all runs with “linear” Kernel 
 * Click *Compare*
++
+image::./images/lab5/lab5-2.png[]
 * Click *test_score*
-
++
+image::./images/lab5/lab5-3.png[]
 
 
 
