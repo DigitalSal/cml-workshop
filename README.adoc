@@ -205,9 +205,24 @@ There is https://docs.cloudera.com/data-visualization/7/work-with-data/topics/vi
 +
 You are now presented with a Dashboard building interface. 
 
-* Click on *Visuals* menu item in the right-hand panel, the connection is the same one you used to run your SQL against, and the Dataset the one you just created. 
+* Click on *Visuals* menu item in the right-hand panel, the connection is the same one you used to run your SQL against, and the Dataset you just created. 
 +
 image::./images/lab3/lab3-11.png[]
+
+* In the right-hand panel click on the *NEW VISUAL* button.
++
+By default, CDV will use a table as the starter format. Of course the idea is to use visualization techniques to develop some insight around the dataset, to explore the underlying data, or to develop a user-friendly dashboard for broader consumption.
+
+* Drag the _paymentmethod_ card to the *Dimensions* shelf and _Record Count_ to *Measures* shelf
+* Click on the Explore Visuals icon to explore visualization options
++
+image::./images/lab3/lab3-12.png[]
+
+* Slect *Horizontal bars* by click on the that card
++
+Congratulations you just built your first visual in CDV! Now add a couple of more interesting visuals and save your dashboard to conclude this part of the workshop.
+
+
 
 
 
