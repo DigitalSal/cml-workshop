@@ -146,3 +146,15 @@ NOTE: If you see below error check to make sure your Workload Password is set in
 +
 image::./images/lab3/lab3-4.png[]
 
+* In *Data Connection* drop down select _pse-impala-vw_ (instructor may provide a different connection)
+* Inn the SQL Editor enter the query below, the click *RUN* or ⌘+Enter
++
+[source, SQL]
+----
+SELECT  
+    COUNT(DISTINCT internetservice) as 'internetservice', 
+    COUNT(DISTINCT multiplelines) as 'multiplelines',
+    COUNT(DISTINCT contract) as 'contract',
+    COUNT(DISTINCT paymentmethod) as 'paymentmethod'
+FROM default.churn_prototype;
+----
