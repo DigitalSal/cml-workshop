@@ -249,6 +249,29 @@ Once you see the flashing red line on the bottom of the session pane turn steady
 You will be greeted with a pop-up window to get you started connecting to pre-populated Data Lake sources (e.g. virtual Data Warehouses). You could simply copy the code snippet provided and easily connect to, say, a Hive vDW. However, in this lab we won’t be using this feature.
 
 * Check the box *Don't show me this again* and click the *Close* button
++
+image::./images/lab4/lab4-2.png[]
+
+*Script 1: Bootstrap File*
+
+* Navigate to _code/0_bootstrap.py_
++
+You need to run this at the start of the project. It will install the requirements, create the STORAGE and STORAGE_MODE environment variables and copy the data from WA_Fn-UseC_-Telco-Customer-Churn-.csv into specified path of the STORAGE location, if applicable.
+
+* *Important!* Run All lines in this script 
++
+image::./images/lab4/lab4-3.png[]
+
+*Script 1: Ingest Data*
+
+* Navigate to _code/1_data_ingest.py_
++
+In this script you will ingest a raw csv file into a Spark Dataframe. The script has a .py extension and therefore is ideally suited for execution with the Workbench editor. No modifications to the code are required and it can be executed as is.
++
+* You can execute the entire script in bulk by clicking on the “play icon” on the top menu bar. Once you do this you should notice the editor bar switches from green to red. 
+* As an alternative you can select subsets of the code and execute those only. This is great for troubleshooting and testing. To do so, highlight a number of lines of code from your script and then click on “Run” -> “Run Lines” from the top menu bar.
+
+* *Important!* Run All lines in this script
 
 
 
