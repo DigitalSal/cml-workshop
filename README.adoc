@@ -437,7 +437,6 @@ This JSON is a set of key value pairs representing a customer’s attributes. Fo
   "TechSupport": "No"
 }
 ----
-+
 
 image::./images/lab6/lab6-1.png[width=400]
 
@@ -449,8 +448,31 @@ Model deployment may take a minute or two, meanwhile you can click on the Model 
 +
 image::./images/lab6/lab6-2.png[]
 
+* Once your model is Deployed, click the *Test* button
++
+The test simulates a request submission to the Model endpoint. The model processes the input and returns the output along with metadata and a prediction for the customer. In addition, the request is assigned a unique identifier. We will use this metadata for ML Ops later in Lab 6.
 
+*---------------------------------------------MLOps Aside---------------------------------------------------------------*
+Before moving on to the next section, we will kick off a script to simulate real-world model performance.
 
+* Return to a running session () or start a new session if none are running
+* Navigate to code/7a_ml_ops_simulation.py
+* Run the entire script by clicking the *Play* button in the top menu to run all lines
+
+This will generate a 1000 calls to the model, while we explore other parts of CML. Do not wait for this script to finish. Proceed to the next part of the workshop.
+
+=== Script 5: Inspecting a Model Script
+
+Navigate back to the Project Overview page and open the “_5_model_serve_explainer.py_" script. Scroll down and familiarize yourself with the code.
+
+* Notice the method “explain” method. This is the Python function whose purpose is to receive the Json input as a request and return a Json output as a response. 
+* Within the method, the classifier object is used to apply the model object’s predict method. 
+* In addition, notice that a decorator named “@cdsw.model_metrics” is applied to the “explain” method. Thanks to the decorator you can use the “cdsw.track_metric” methods inside the “explain” method to register each scalar value associated with each request. 
+* The values are saved in the Model Metrics Store, a built in database used for tracking model requests.
+
+Navigate back to the Project Overview page. Open the “models/telco_linear” subfolder and notice the presence of the “telco_linear.pkl” file. This is the physical model file loaded by the .py script you just inspected above. 
+
+image::./images/lab6/lab6-3.png[]
 
 
 
