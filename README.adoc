@@ -496,7 +496,8 @@ image::./images/lab7/lab7-2.png[]
 * Scroll the bottom of the page and click on *Create Application*
 +
 Application startup can take up to 2 minutes, and once the application is ready you’ll see a card similar to this:
-+
+
+
 image::./images/lab7/lab7-3.png[]
 
 
