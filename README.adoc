@@ -518,7 +518,21 @@ For example, this customer’s prediction of “will churn” is more significan
 * The dark red color coding signals that the customer is negatively impacted by the current value for the feature. 
 * The current values of Monthly Charges and Phone Service also increase the likelihood of churn while the values of the Streaming Movies and Total Charges features decrease the likelihood of churn.
 +
-image::./images/lab7/lab7-5.png[]
+image::./images/lab7/lab7-5.png[width=300]
++
+Let’s see what happens if we change the value for the most impactful feature in this given scenario i.e. “Internet Service”. Currently the value is set to “Fiber Optic”. Hover over the entry in the table and select “DSL”.
++
+image::./images/lab7/lab7-6.png[width=300]
++
+The table has now reloaded and the churn probability for this customer has dramatically decreased to roughly 15%. 
++
+This simple analysis can help the marketer optimize strategy in accordance to different business objectives. For example, the company could now tailor a proactive marketing offer based on this precious information. In addition, a more thorough financial analysis could be tied to the above simulation perhaps after adjusting the 50% threshold to increase or decrease selectivity based on business constraints or customer lifetime value assigned to each customer.
+
+=== Script 6: Exploring the Application Script
+
+Navigate back to the CML Project Home folder (*Overview*). Open the “Code” folder and then script “6_application.py”. This is a basic Flask application that serves the HTML and some specific data used for. 
+
+Click on “Open in Workbench” to visualize the code in a more reader friendly-mode.
 
 
 
