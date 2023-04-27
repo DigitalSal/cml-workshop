@@ -403,14 +403,15 @@ This pattern is simple and reliable but has one pitfall. It requires the user or
 Below are the steps to deploy a near-real-time scoring model:
 
 * Click on *Models* in the side panel
-* Click on * New Model* 
-* *Important!* Name your model _Churn Model API Endpoint_. Any other name will cause issues with downstream scripts.
+* Click on *New Model* 
+* *Important!* Name your model `Churn Model API Endpoint`. Any other name will cause issues with downstream scripts.
+* *Description:* `Predicts and explains customer churn probability`
 * *Important!* Uncheck _Enable Authentication_
 * Under *File* select _code/5_model_serve_explainer.py_
-* Under *Function* enter explain
+* Under *Function* enter `explain`
 * For *Example* Input enter the following JSON
 * You do not need to Enable Spark for model serving in this case
-
++
 This JSON is a set of key value pairs representing a customer’s attributes. For example, a customer who is currently on a DSL Internet Service plan.
 [source, JSON]
 ----
@@ -436,6 +437,16 @@ This JSON is a set of key value pairs representing a customer’s attributes. Fo
   "TechSupport": "No"
 }
 ----
++
+image::./images/lab5/lab6-1.png[]
+
+* Scroll to the bottom of the page and click on the *Deploy Model* button
++
+Model deployment may take a minute or two, meanwhile you can click on the Model name and explore the UI. The code for a sample request is provided on the left side. On the right side observe the model’s metadata. Each model is assigned a number of attributes including Model Name, Deployment, Build and creation timestamp. 
+
+* Note down the *Build Id* of your model, we will need it in MLOps part of the workshops
++
+image::./images/lab5/lab6-2.png[]
 
 
 
