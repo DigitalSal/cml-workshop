@@ -570,6 +570,17 @@ Navigate back to the project overview and launch a new session with the followin
 +
 image::./images/lab8/lab8-1.png[]
 
+* Once the tracked metrics have been saved to a Python data structure they can be used for all sorts of purposes. 
+* For example, the second diagram shows a basic line plot in Seaborn where the models’ output probabilities are plotted as a function of time. On the X axis you can see the timestamp associated with each request. On the Y axis you can find the associated output probability.
++
+image::./images/lab8/lab8-2.png[]
+
+* Similarly, you can plot processing time as shown in the third diagram. This represents the time duration required to process a particular request.
+* As an example, this information could be used to trigger the deployment of more resources to support this model endpoint when a particular threshold is passed. You can deploy more resources manually via the UI, or programmatically and in an automated CI/CD pipeline with CML APIv2 and CML Jobs.
++
+image::./images/lab8/lab8-3.png[]
+
+
 
 
 
