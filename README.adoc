@@ -401,6 +401,7 @@ This pattern is simple and reliable but has one pitfall. It requires the user or
 * Once a model is deployed to a CML Models container, a CML Application can forward requests to the Model endpoint to provide visual insights powered by ML models.
 
 Below are the steps to deploy a near-real-time scoring model:
+
 * Click on *Models* in the side panel
 * Click on * New Model* 
 * *Important!* Name your model _Churn Model API Endpoint_. Any other name will cause issues with downstream scripts.
@@ -411,7 +412,30 @@ Below are the steps to deploy a near-real-time scoring model:
 * You do not need to Enable Spark for model serving in this case
 
 This JSON is a set of key value pairs representing a customer’s attributes. For example, a customer who is currently on a DSL Internet Service plan.
-
+[source, JSON]
+----
+{
+  "StreamingTV": "No",
+  "MonthlyCharges": 70.35,
+  "PhoneService": "No",
+  "PaperlessBilling": "No",
+  "Partner": "No",
+  "OnlineBackup": "No",
+  "gender": "Female",
+  "Contract": "Month-to-month",
+  "TotalCharges": 1397.475,
+  "StreamingMovies": "No",
+  "DeviceProtection": "No",
+  "PaymentMethod": "Bank transfer (automatic)",
+  "tenure": 29,
+  "Dependents": "No",
+  "OnlineSecurity": "No",
+  "MultipleLines": "No",
+  "InternetService": "DSL",
+  "SeniorCitizen": "No",
+  "TechSupport": "No"
+}
+----
 
 
 
