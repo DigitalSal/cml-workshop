@@ -377,12 +377,44 @@ image::./images/lab5/lab5-1.png[]
 As expected, higher number of max_iterations produces better result (higher test_score). Interestingly, the choice of kernel does not make a difference at higher max_iter values. We can choose linear as it allows for faster model training.
 
 * Select all runs with “linear” Kernel 
-* Click *Compare*
+* Click the *Compare* button
 +
 image::./images/lab5/lab5-2.png[]
-* Click *test_score*
+* Scroll down and click on the *test_score* link
 +
 image::./images/lab5/lab5-3.png[]
++
+Built-in visualizations in mlflow allow for more detailed comparison of various experiment runs and outcomes.
+
+
+== Lab 6: CML Model Deployment (30 min)
+
+Once a model is trained its predictions and insights must be put to use so they can add value to the organization. Generally this means using the model on new, unseen data in a production environment that offers key ML Ops capabilities. 
+
+One such example is Batch Scoring via CML Jobs. The model is loaded in a script and the predict function provided by the ML framework is applied to data in batch. The script is scheduled and orchestrated to perform the scoring on a regular basis. In case of failures, the script or data are manually updated so the scoring can resume. 
+
+This pattern is simple and reliable but has one pitfall. It requires the user or system waiting for the scoring job to run at its scheduled time. What if predictions are required on a short notice? Perhaps when a prospect navigates on an online shopping website or a potential anomaly is flagged by a third party business system?
+
+* CML Models allow you to deploy the same model script and model file in a REST Endpoint so the model can now serve responses in real time. The endpoint is hosted by a container. 
+* CML Models provides tracking, metadata and versioning features that allow you to manage models in production.
+* Similarly, CML Applications allows you to deploy visual tools in an endpoint container. This is typically used to host apps with open source libraries such as Flask, Shiny, Streamlit and more. 
+* Once a model is deployed to a CML Models container, a CML Application can forward requests to the Model endpoint to provide visual insights powered by ML models.
+
+Below are the steps to deploy a near-real-time scoring model:
+* Click on *Models* in the side panel
+* Click on * New Model* 
+* *Important!* Name your model _Churn Model API Endpoint_. Any other name will cause issues with downstream scripts.
+* *Important!* Uncheck _Enable Authentication_
+* Under *File* select _code/5_model_serve_explainer.py_
+* Under *Function* enter explain
+* For *Example* Input enter the following JSON
+* You do not need to Enable Spark for model serving in this case
+
+This JSON is a set of key value pairs representing a customer’s attributes. For example, a customer who is currently on a DSL Internet Service plan.
+
+
+
+
 
 
 
