@@ -509,6 +509,19 @@ Next, click on the customer at the top of the table to investigate further.
 
 image::./images/lab7/lab7-4.png[]
 
+A more detailed view of the customer is automatically loaded. The customer has a 58% chance of churning. 
+
+The Lime model applied to the classifier provides a color coding scheme highlighting the most impactful features in the prediction label being applied to this specific customer. 
+
+For example, this customer’s prediction of “will churn” is more significantly influenced by the “Internet Service” feature. 
+
+* The dark red color coding signals that the customer is negatively impacted by the current value for the feature. 
+* The current values of Monthly Charges and Phone Service also increase the likelihood of churn while the values of the Streaming Movies and Total Charges features decrease the likelihood of churn.
++
+image::./images/lab7/lab7-5.png[]
+
+
+
 
 
 
