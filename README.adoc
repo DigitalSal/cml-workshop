@@ -474,6 +474,31 @@ Navigate back to the Project Overview page. Open the “models/telco_linear” s
 
 image::./images/lab6/lab6-3.png[]
 
+== Lab 7: Interacting with the Visual Application (10 min)
+
+You have already seen that Cloudera Data Visualization is deployed in CML as an Application. In fact, any custom, UI app can be hosted within CML. These can be streamlit, Django, or Rshiny (or other frameworks) apps that deliver custom visualization or incorporate a real-time model scoring. In the following steps we will deploy an Application for the Churn Customer project:
+
+* Go to *Models* and click on the model that you’ve deployed
+* Go to the _Settings_ tab and copy the _Access Key_ string
++
+image::./images/lab7/lab7-1.png[]
+
+* Navigate to _Files > flask > single_view.html_ and open in a new session. (don't start the session)
+* *Important!* On line 61 of the file, update the access key value with the Access Key you got earlier. Click _File > Save_ (or ⌘+S)
+* Click on *Application* in the side panel
+* Click on *New Application*
+* Give your application a name (`Churn Model API Endpoint`), and provide a _unique_ subdomain
+* Under Scripts select code/6_application.py
+* Ensure that a *Workbench* editor is selected and *Enable Spark* toggle is turned on
++
+image::./images/lab7/lab7-2.png[]
+
+* Scroll the bottom of the page and click on *Create Application*
++
+Application startup can take up to 2 minutes, and once the application is ready you’ll see a card similar to this:
++
+image::./images/lab7/lab7-3.png[]
+
 
 
 
