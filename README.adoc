@@ -438,7 +438,7 @@ This JSON is a set of key value pairs representing a customer’s attributes. Fo
 }
 ----
 +
-image::./images/lab5/lab6-1.png[]
+image::./images/lab6/lab6-1.png[]
 
 * Scroll to the bottom of the page and click on the *Deploy Model* button
 +
@@ -446,7 +446,7 @@ Model deployment may take a minute or two, meanwhile you can click on the Model 
 
 * Note down the *Build Id* of your model, we will need it in MLOps part of the workshops
 +
-image::./images/lab5/lab6-2.png[]
+image::./images/lab6/lab6-2.png[]
 
 
 
