@@ -438,6 +438,7 @@ This JSON is a set of key value pairs representing a customer’s attributes. Fo
 }
 ----
 +
+
 image::./images/lab6/lab6-1.png[]
 
 * Scroll to the bottom of the page and click on the *Deploy Model* button
