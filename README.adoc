@@ -499,7 +499,15 @@ Application startup can take up to 2 minutes, and once the application is ready 
 +
 image::./images/lab7/lab7-3.png[width=300]
 
+Click on the application in order to open it. This will automatically redirect you to the Visual Application landing page where the same data you worked with earlier is presented in an interactive table. 
 
+On the left side notice the probability column. This is the target variable predicted by the Machine Learning Model. It reflects the probability of each customer churning. The value is between 0 and 1. A value of 0.49 represents a 49% probability of the customer churning. By default, if the probability is higher than 50% the classifier will label the customer as “will churn” and otherwise as “will not churn”.
+
+The 50% threshold can be increased or decreased implying customers previously assigned a “will churn” label may flip to “will not churn” and vice versa. This has important implications as it provides an avenue for tuning the level selectivity based on business considerations but a detailed explanation is beyond the scope of this content. 
+
+Next, click on the customer at the top of the table to investigate further.
+
+image::./images/lab7/lab7-4.png[]
 
 
 
