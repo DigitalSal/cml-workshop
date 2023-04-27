@@ -544,6 +544,33 @@ As always no code changes are required. Here are some key highlights:
 * At line 248 we run the app on the "CDSW_APP_PORT". This value is already preset for you as this is a default environment variable. You can reuse this port for other applications. 
 
 
+== Lab 8: CML Models Operations (15 min)
+
+The following steps assume you have executed the 7a_ml_ops_simulation.py script as shown in Lab 6 section *MLOps Aside*. If you haven’t done it please go back and make sure to run the model simulation script. 
+
+Navigate back to the project overview and launch a new session with the following configurations.
+
+*Session Name:* `telco_churn_ops_session` +
+*Editor:* `Workbench` +
+*Kernel:* `Python 3.7` +
+*Runtime Edition:* `Standard` +
+*Runtime Version:* `Any available version` +
+*Enable Spark Add On:* `any Spark version` +
+*Resource Profile:* `1vCPU/2 GiB Memory` +
+
+* Once the session is running, open script “7b_ml_ops_visual.py” and explore the code in the editor.
+* Execute the whole script end to end without modifications.
+* Observe the code outputs on the right side. Here are the key highlights:
++
+--
+** Model predictions are tracked in the CML Models Metrics Store. This is enabled by the use of the Python decorator and the use of “cdsw.track_metrics” methods in script 5. What is being tracked is completely up to the script developer.
+** You can then extract the predictions and related metadata and put the information in a Pandas dataframe. Again, the Python library you use does not matter and is entirely up to the developer. 
+** This is exactly what the first diagram on the right side of your screen shows. Each column represents a prediction request reaching your CML Model endpoint. Each row represents a metric you are tracking in the CML Models Metrics Store.
+--
++
+image::./images/lab8/lab8-1.png[]
+
+
 
 
 
