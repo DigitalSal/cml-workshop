@@ -647,7 +647,8 @@ image::./images/lab10/lab10-1.png[]
 * Paste the code into this new file
 * Replace < your API Key > with your actual API key, *in quotes*
 * Run the code snippet and determine your projectId from the output (e.g. `19yp-be0v-acb4-8pdm`)
-* Use *list_jobs()* and *create_job_run(...)* functions to kick off the job we created in Lab 4. For reference, see https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-apiv2-usage-examples.html[API v2 Usage].
+* Run *api_client.list_jobs("19yp-be0v-acb4-8pdm")* 
+* Run *create_job_run(cmlapi.CreateJobRunRequest(), project_id=”<project id>”,job_id=”<job id>”)* functions to kick off the job we created in Lab 4. For reference, see https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-apiv2-usage-examples.html[API v2 Usage].
 * *Caution! Irreversible step! Do only if you are done with the project!*
 +
 Delete your project with delete_project() command.
