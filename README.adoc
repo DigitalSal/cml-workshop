@@ -598,6 +598,84 @@ Under the hood, SDX tracks and secures activity related to each CDP Data Service
 
 * Click on *Overview* and find _lineage.yml_ file
 * Click on the file to open
++
+image::./images/lab9/lab9-1.png[]
+
+Take note of the metadata that is present here, including the source table name and the query used to create the training dataset. Additional metadata can be provided here.
+
+* Click on the top left corner menu (Bento menu)
++
+image::./images/lab9/lab9-2.png[]
+
+* Click on *Management Console*
+* Click on the CDP environment you have been working in (where ML Workspace is deployed)
+* Click on *Atlas* under _QUICK LINKS_
++
+image::./images/lab9/lab9-3.png[]
++
+From the Atlas UI, search for ML models by entering the “ml_model_build” type. Notice that there are various Atlas entities to browse for models.
++ 
+image::./images/lab9/lab9-4.png[]
++
+In the output, you will see all models that your colleagues deployed in this workshop. Notice that each model is assigned a unique ID at the end. That ID corresponds to the Model Build from CML. Identify your model using the Build Id noted down when you deployed your model. select the model you created. 
+
+* Open your model by clicking its Model Name - Build Id. 
++
+image::./images/lab9/lab9-5.png[]
++
+Familiarize yourself with the Model properties tab. Notice that each model logged is associated with rich metadata. You can customize Atlas Model metadata by editing the lineage.yml file in the CML Project Home folder
++
+image::./images/lab9/lab9-6.png[]
++
+image::./images/lab9/lab9-7.png[]
++
+Atlas and Ranger provides a rich set of Governance and Security capabilities. For example, you can apply Atlas tags to your entities across Data Services and then propagate Ranger policies to automatically secure applications across complex pipelines. 
++
+A detailed exploration of SDX in the context of CML is not in scope for this workshop but please visit the “Next Steps” section to find out more on this and other topics.
+
+== Lab 10: _(Bonus)_ Cleanup with CML APIv2
+
+https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-api-v2.html[APIv2] is a powerful tool for automating ML workflows for managing projects, jobs, models, and applications. In this section we explore the use of the API and use it to cleanup the artifacts created in this lab.
+
+* Retrieve an API key from *User Settings*  > API Keys > *Create API Key*
++
+image::./images/lab10/lab10-1.png[]
+
+* Copy the Python code in the box on this same page
+* Create a new Session or open an existing one
+* Create a new file (you choose the file name) 
+* Paste the code into this new file
+* Replace < your API Key > with your actual API key, *in quotes*
+* Run the code snippet and determine your projectId from the output (e.g. 19yp-be0v-acb4-8pdm)
+* Use list_jobs() and create_job_run(...) functions to kick off the job we created in Part 4. For reference, see https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-apiv2-usage-examples.html[API v2 Usage].
+* *Caution! Irreversible step! Do only if you are done with the project!*
++
+Delete your project with delete_project() command.
+
+== Conclusions
+
+In this workshop you created an end to end project to support a Machine Learning model in Production.
+
+* You easily created a Spark Session and explored a large dataset with the PySpark library. Thanks to CML Runtimes and Sessions you were able to switch between editors, resources, and optionally Python and Spark versions at the click of a button.
+* You created a Model REST Endpoint to serve predictions to internal or external business applications. Then, you built an interactive dashboard to make the “black box model” interpretable for your business stakeholders.
+* You explored the foundations of a basic ML Ops pipeline to easily retrain, monitor, and reproduce your model in production. With the CML Models interface you unit tested and increased model observability. Then, you monitored its performance with CML APIv2.
+* Finally, you used CDP SDX to log and visualize Model Metadata and Lineage.
+
+== Next Steps
+
+If you want to learn more about CML and CDP we invite you to visit the following assets and tutorials or ask your Cloudera Workshop Lead for a follow up. 
+
+* https://docs.cloudera.com/machine-learning/cloud/applied-ml-prototypes/topics/ml-amps-overview.html[Learn how to use Cloudera Applied ML Prototypes] to discover more CML Projects using MLFlow, Streamlit, Tensorflow, PyTorch and other popular libraries. The AMP Catalog is maintained by the Cloudera Fast Forward Labs team and allows you to automatically deploy complex use cases within minutes.
+* https://github.com/pdefusco/CML_HowTo[CML HowTo]: A series of tips and tricks for the CML beginner
+* https://github.com/pdefusco/simpsons_sentiment_analysis[Sentiment Analysis] in R: and end to end ML project with SparklyR and GPU training
+* https://github.com/pdefusco/CSA2CML[CSA2CML]: Build a real time anomaly detection dashboard with Flink, CML, and Streamlit
+* https://github.com/pdefusco/SDX2CML[SDX2CML]: Explore ML Governance and Security features in more detail to increase legal compliance and enhance ML Ops best practices.
+* https://github.com/pdefusco/CML2CDE[CML2CDE]: Create CI/CD Pipelines for Spark ETL with CML Notebooks and CDE Virtual Cluster
+* https://github.com/pdefusco/CML_AMP_APIv2[API v2]: Familiarize yourself with API v2, CML's goto Python Library for ML Ops and DevOps
+* https://github.com/pdefusco/Distributed_PyTorch_Horovod[Distributed PyTorch with Horovod]: A quickstart for distributing Horovod with the CML Workers API
+
+
+
 
 
 
