@@ -605,13 +605,13 @@ Take note of the metadata that is present here, including the source table name 
 
 * Click on the top left corner menu (Bento menu)
 +
-image::./images/lab9/lab9-2.png[]
+image::./images/lab9/lab9-2.png[width=300]
 
 * Click on *Management Console*
 * Click on the CDP environment you have been working in (where ML Workspace is deployed)
 * Click on *Atlas* under _QUICK LINKS_
 +
-image::./images/lab9/lab9-3.png[width=300]
+image::./images/lab9/lab9-3.png[]
 +
 From the Atlas UI, search for ML models by entering the “ml_model_build” type. Notice that there are various Atlas entities to browse for models.
 + 
