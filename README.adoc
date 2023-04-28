@@ -651,7 +651,7 @@ image::./images/lab10/lab10-1.png[]
 * Run *create_job_run(cmlapi.CreateJobRunRequest(), project_id=”<project id>”,job_id=”<job id>”)* functions to kick off the job we created in Lab 4. For reference, see https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-apiv2-usage-examples.html[API v2 Usage].
 * *Caution! Irreversible step! Do only if you are done with the project!*
 +
-Delete your project with delete_project() command.
+Delete your project with *delete_project()* command.
 
 == Conclusions
 
