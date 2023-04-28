@@ -611,11 +611,11 @@ image::./images/lab9/lab9-2.png[]
 * Click on the CDP environment you have been working in (where ML Workspace is deployed)
 * Click on *Atlas* under _QUICK LINKS_
 +
-image::./images/lab9/lab9-3.png[]
+image::./images/lab9/lab9-3.png[width=300]
 +
 From the Atlas UI, search for ML models by entering the “ml_model_build” type. Notice that there are various Atlas entities to browse for models.
 + 
-image::./images/lab9/lab9-4.png[]
+image::./images/lab9/lab9-4.png[width=300]
 +
 In the output, you will see all models that your colleagues deployed in this workshop. Notice that each model is assigned a unique ID at the end. That ID corresponds to the Model Build from CML. Identify your model using the Build Id noted down when you deployed your model. select the model you created. 
 
