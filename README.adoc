@@ -637,7 +637,7 @@ A detailed exploration of SDX in the context of CML is not in scope for this wor
 
 https://docs.cloudera.com/machine-learning/cloud/api/topics/ml-api-v2.html[APIv2] is a powerful tool for automating ML workflows for managing projects, jobs, models, and applications. In this section we explore the use of the API and use it to cleanup the artifacts created in this lab.
 
-* Retrieve an API key from *User Settings*  > API Keys > *Create API Key*
+* Go back to your ML Workspave an retrieve an API key from *User Settings*  > API Keys > *Create API Key*
 +
 image::./images/lab10/lab10-1.png[]
 
