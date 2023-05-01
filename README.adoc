@@ -63,15 +63,15 @@ image::./images/lab1/lab1-2.png[]
 In a workspace, Projects view is the default and you’ll be presented with all public (within your organization) and your own projects, if any. In this lab we will be creating a project based on Applied ML Prototype. 
 
 - Click on *AMPs* in the side panel and search for “workshop”
-- If you don't see a *Cloudera Machine Learning Workshop* AMP, click on *Projects* on the left-side panel
+- If you don't see a *Cloudera Machine Learning Workshop* AMP, click on *Projects* on the left-side panel, and follow the next 5 steps:
 +
 [listing]
 ....
-* Click on the `New Project` button on the right side of the screen
-* Name you project something creative
-* Under Initial Setup, click the `AMPs` tab.
-* Provide teh Git URL: `https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow`
-* Click the `Create Project` button
+1. Click on the `New Project` button on the right side of the screen
+2. Name you project something creative
+3. Under Initial Setup, click the `AMPs` tab.
+4. Provide teh Git URL: `https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow`
+5. Click the `Create Project` button
 ....
     
 
