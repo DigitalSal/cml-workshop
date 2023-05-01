@@ -28,9 +28,6 @@ In this exercise we will implement an end-to-end machine learning workflow using
 
 In this Hands On Lab you will create a model to predict customer churn and present model-driven insights to your stakeholders. You will use an interpretability technique to make your otherwise “black box model” explainable in an interactive dashboard. A mathematical explanation is beyond the scope of this lab but if you are interested in learning more we recommend the https://ff06-2020.fastforwardlabs.com/[Fast Forward Labs Report on Model Interpretability]. Finally, you will use basic ML Ops techniques to productionize and monitor your model. 
 
-=== Prerequisites for workshop participants:
-- Need to have Workload password set (this will be needed for CDV part where CDW is queried)
-- For directions to set Workload password click here https://github.com/DigitalSal/cml-workshop/blob/main/workloadpassword/setworkloadpass.adoc[Reset Workload Password]
 
 === Environment Setup for workshop:
 - Single ML Workspace as the primary working environment 
@@ -47,9 +44,14 @@ image::./images/misc/pref/MLlifeCycleinCML.png[]
 
 AMPs (Applied Machine Learning Prototypes) are reference Machine Learning projects that have been built by Cloudera Fast Forward Labs to provide quickstart examples and tutorials. AMPs are deployed into the Cloudera Machine Learning (CML) experience, which is a platform you can also build your own Machine Learning use cases on.
 
+=== Prerequisites for workshop participants:
 - Go to the Workshop Environment (provided by instructor)
+- Need to have Workload password set (this will be needed for CDV part where CDW is queried)
+--
+-- For directions to set Workload password click here https://github.com/DigitalSal/cml-workshop/blob/main/workloadpassword/setworkloadpass.adoc[Reset Workload Password]
+--
 - Navigate to the Machine Learning tile from the CDP Menu 
-- Click into the Workspace by clicking the Workspace name (provided by instructor)
+- Make sure you can click into the Workspace by clicking the Workspace name (provided by instructor)
 
 image::./images/lab1/lab1-1.png[]
 
