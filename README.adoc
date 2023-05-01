@@ -66,7 +66,11 @@ In a workspace, Projects view is the default and you’ll be presented with all 
 - If you don't see a *Cloudera Machine Learning Workshop* AMP, click on *Projects* on the left-side panel
 +
 --
-** Test
+** Click on the *New Procject* button on the right side of the screen
+** Name you project something creative
+** Under Initial Setup, click the *AMPs* tab.
+** Provide teh Git URL: `https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow`
+** Click the *Create Project* button
 --
 
     
@@ -103,7 +107,7 @@ image::./images/lab2/lab2-1.png[]
 
 *Collaborators:* +
 
-* Click on *Collaboratos* in the side panel
+* Click on *Collaborators* in the side panel
 +
 This feature allows teams of Data Scientists, Analysts, and Data Engineers to work together on a given project. 
 +
