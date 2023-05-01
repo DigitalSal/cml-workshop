@@ -6,20 +6,20 @@ Please keep it with you. If you have forgotten it, you will be able to repeat th
 . Click on your *User Name* (Ex: `wuser00@workshop.com`) at the lower left corner.
 . Click on the *Profile* option.
 
-image:images/prereq/1.PNG[] +
+image:images/1.PNG[] +
 
 . Click option *Set Workload Password*.
 . Enter a suitable *Password* and *Confirm Password*.
 . Click button *Set Workload Password*.
 
 
-image:images/prereq/2.PNG[] +
+image:images/2.PNG[] +
 
-image:images/prereq/3.PNG[] +
+image:images/3.PNG[] +
 
 {blank} +
 
 Check that you got the message - *Workload password is currently set* or alternatively, look for a message next to *Workload Password* which says *(Workload password is currently set)*.
 
 
-image:images/prereq/4.PNG[] +
+image:images/4.PNG[] +
