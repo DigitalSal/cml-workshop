@@ -48,7 +48,7 @@ AMPs (Applied Machine Learning Prototypes) are reference Machine Learning projec
 - Go to the Workshop Environment (provided by instructor)
 - Need to have Workload password set (this will be needed for CDV part where CDW is queried)
 --
--- For directions to set Workload password click here https://github.com/DigitalSal/cml-workshop/blob/main/workloadpassword/setworkloadpass.adoc[Reset Workload Password]
+** For directions to set Workload password click here https://github.com/DigitalSal/cml-workshop/blob/main/workloadpassword/setworkloadpass.adoc[Reset Workload Password]
 --
 - Navigate to the Machine Learning tile from the CDP Menu 
 - Make sure you can click into the Workspace by clicking the Workspace name (provided by instructor)
