@@ -65,15 +65,14 @@ In a workspace, Projects view is the default and you’ll be presented with all 
 - Click on *AMPs* in the side panel and search for “workshop”
 [listing]
 ....
-- If you don't see a *Cloudera Machine Learning Workshop* AMP, click on *Projects* on the left-side panel
-+
---
-** Click on the *New Project* button on the right side of the screen
-** Name you project something creative
-** Under Initial Setup, click the *AMPs* tab.
-** Provide teh Git URL: `https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow`
-** Click the *Create Project* button
---
+If you don't see a *Cloudera Machine Learning Workshop* AMP, click on *Projects* on the left-side panel
+
+* Click on the *New Project* button on the right side of the screen
+* Name you project something creative
+* Under Initial Setup, click the *AMPs* tab.
+* Provide teh Git URL: `https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow`
+* Click the *Create Project* button
+
 ....
     
 
