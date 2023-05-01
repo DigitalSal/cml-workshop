@@ -1,0 +1,25 @@
+= Setting Workload Password
+
+You will need to define your workload password that will be used to acess non-SSO interfaces. You may read more about it https://docs.cloudera.com/management-console/cloud/user-management/topics/mc-access-paths-to-cdp.html[here].
+Please keep it with you. If you have forgotten it, you will be able to repeat this process and define another one.
+
+. Click on your *User Name* (Ex: `wuser00@workshop.com`) at the lower left corner.
+. Click on the *Profile* option.
+
+image:images/prereq/1.PNG[] +
+
+. Click option *Set Workload Password*.
+. Enter a suitable *Password* and *Confirm Password*.
+. Click button *Set Workload Password*.
+
+
+image:images/prereq/2.PNG[] +
+
+image:images/prereq/3.PNG[] +
+
+{blank} +
+
+Check that you got the message - *Workload password is currently set* or alternatively, look for a message next to *Workload Password* which says *(Workload password is currently set)*.
+
+
+image:images/prereq/4.PNG[] +
