@@ -30,6 +30,7 @@ In this Hands On Lab you will create a model to predict customer churn and prese
 
 === Prerequisites for workshop participants:
 - Need to have Workload password set (this will be needed for CDV part where CDW is queried)
+- For directions to set Workload password click here https://github.com/DigitalSal/cml-workshop/blob/main/workloadpassword/setworkloadpass.adoc[Reset Workload Password]
 
 === Environment Setup for workshop:
 - Need Impala CDW large enough to support 50 - 100 users hitting it during workshop
