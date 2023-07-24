@@ -416,7 +416,7 @@ This pattern is simple and reliable but has one pitfall. It requires the user or
 
 Below are the steps to deploy a near-real-time scoring model:
 
-* Click on *Models* in the side panel
+* Click on *Model Deployments* in the side panel
 * Click on *New Model* 
 * *Important!* Name your model `Churn Model API Endpoint`. Any other name will cause issues with downstream scripts.
 * *Description:* `Predicts and explains customer churn probability`
