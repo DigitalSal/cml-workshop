@@ -238,6 +238,7 @@ Congratulations you just built your first visual in CDV! Now add a couple of mor
 * Click on the *Visual* menu item on the right-hand panel and the click on *NEW VISUAL* to add a new visual
 * Repeat steps above in this section to build a visual based on other variables and styles
 * Give your dashboard a title and a subtitle
+* Click the *SAVE* button
 
 Performant SQL interface and visual data exploration are two powerful tools in the arsenal of a Data Professional. One helps to wrangle the data available in the enterprise Data Lakehouse, the other makes it easier to identify patterns and to communicate information to a wider audience.
 
