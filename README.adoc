@@ -501,7 +501,7 @@ image::./images/lab7/lab7-1.png[]
 * *Important!* On line 61 of the file, update the access key value with the Access Key you got earlier. Click _File > Save_ (or ⌘+S)
 * Click on *Application* in the side panel
 * Click on *New Application*
-* Give your application a name (`Churn Model API Endpoint`), and provide a _unique_ subdomain
+* Give your application a name (`Churn Model Explainer`), and provide a _unique_ subdomain
 * Under Scripts select code/6_application.py
 * Ensure that a *Workbench* editor is selected and *Enable Spark* toggle is turned on
 +
