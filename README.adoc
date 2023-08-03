@@ -1,6 +1,6 @@
 = Cloudera Machine Learning - Workshop Student Guide
 
-image::./images/misc/AMERPartnerWSBanner.png[]
+image::https://github.com/DigitalSal/cdp-ds-workshops/raw/main/images/AMERPartnerWSBanner.png[]
 
 // :toc: left 
 '''
