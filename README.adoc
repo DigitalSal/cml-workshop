@@ -91,7 +91,8 @@ image::./images/lab1/lab1-4.png[]
 -- 
 ** DATA_LOCATION: `data/churn_prototype`
 ** HIVE_DATABASE: `default`
-** HIVE_TABLE: `churn_prototype_<unique username/value>`
+//** HIVE_TABLE: `churn_prototype_<unique username/value>`
+HIVE_TABLE: `<unique username/value>` For example, cdpuser50
 --
 +
 image::./images/lab1/lab1-5.png[]
